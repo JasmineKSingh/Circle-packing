@@ -78,7 +78,7 @@ Draw("artist_url_data.json");
     d3.selectAll(("input[name='controlHeatmapType']")).on("change", function () {
       
       d3.select("#the_SVG_ID").remove();
-      // console.log(this.value)
+      console.log(this.value)
       if (this.value == "genre") {
         data_file = "artist_genre_data.json";
         Draw(data_file);
